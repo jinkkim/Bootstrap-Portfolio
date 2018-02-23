@@ -8,8 +8,22 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <title>Jin's Portfolio</title>
 </head>
+<style>
 
-<body>
+  #github-image, #linked-image, #stackoverflow-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  #main-section, #sidebar {
+    background-color: #fff;
+    border: 1px #ccc solid;
+  }
+</style>
+
+
+<body style="background-color: #efeee7;">
   <nav style="background-color:#fff; border-bottom:1px solid gray;"
           class="navbar fixed-top m-0 p-0 d-flex flex-sm-column flex-md-row justify-content-around">
     <div class="container m-0 p-0 col-12 col-md-10">
@@ -24,6 +38,32 @@
       </section>
     </div>
   </nav>
+
+  <br/><br/>
+
+  <div class="container-fluid d-flex flex-column flex-md-row justify-content-around my-5">
+    <section id="main-section" class="container col-12 col-md-6 mt-5 p-4">
+
+      <h2 class="h2" style="color: #4aaaa5">About Me</h2>
+
+      <hr style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 0.5em; margin-right: 0.5em; border-style: inset; border-width: 2px;">
+      <div class="d-flex flex-column flex-md-row">
+        <img class="img-fluid mb-2 mr-2" style="max-width: 200px; max-height: 200px;" id="bio-image" src="images/me.jpg" alt="Jin">
+        <p>Jin is a half dog trainer and a half engineer.</p>
+      </div>
+    </section>
+
+    <section id="sidebar" style="height: 150px;" class="container col-12 col-md-4 mt-5 pt-4 pl-3 justify-content-around">
+      <h2 class="h4" style="color: #4aaaa5">Connect with me</h2>
+
+      <hr style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 0.5em; margin-right: 0.5em; border-style: inset; border-width: 1px;">
+
+      <a href="https://github.com/jinkkim"><img id="github-image" src="images/github.png" alt="Github"></a>
+      <a href="https://www.linkedin.com/in/jinkingkim/"><img id="linked-image" src="images/linkedin.png" alt="Linkedin"></a>
+      <a href="https://stackoverflow.com"><img id="stackoverflow-image" src="images/stackoverflow.png" alt="Stackoverflow"></a>
+    </section>
+  </div>
+
 
   <footer style="background-color: #666; color:#fff; border-top: 5px solid teal;" class="fixed-bottom text-center pt-3">
     <p>Copyleft 2018 by Jin Kim</p>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Jin's Portfolio</title>
+</head>
+<style>
+
+  #github-image, #linked-image, #stackoverflow-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  #main-section, #sidebar {
+    background-color: #fff;
+    border: 1px #ccc solid;
+  }
+
+  #caption{
+    width: 180px;
+    color: #fff;
+    background-color: #4aaaa5;
+  }
+</style>
+
+
+<body style="background-color: #efeee7;">
+  <nav style="background-color:#fff; border-bottom:1px solid gray;"
+          class="navbar fixed-top m-0 p-0 d-flex flex-sm-column flex-md-row justify-content-around">
+    <div class="container m-0 p-0 col-12 col-md-10">
+      <section style="color:#fff; background-color: #4aaaa5;"
+               class="h2 text-center m-0 p-3 col-12 col-md-4">Jin Kim</section>
+
+      <section class="d-inline-flex p-3 col-12 col-md-5 justify-content-around">
+        <a href="index.html">About</a>
+        <div>|</div>
+        <a href="portfolio.html">Portfolio</a>
+        <div>|</div>
+        <a href="contact.html">Contact</a>
+      </section>
+    </div>
+  </nav>
+
+  <br/><br/>
+
+  <div class="container d-flex flex-column flex-md-row justify-content-between my-5 mx-0">
+
+    <section id="main-section" class="container col-12 col-md-7 mt-5 p-3">
+
+      <section id="contact-box">
+
+        <h1 class = "h2">Contact</h2>
+
+          <hr style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: auto; margin-right: auto; border-style: inset; border-width: 2px;">
+
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input class="form-control" type="text" name="name" id="name" value="Jane Smith">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input class="form-control" type="text" name="email" id="email" value="example@gmail.com" >
+            </div>
+
+            <div class="form-group">
+             <label for="message">Message</label>
+             <textarea class="form-control" name="comments"></textarea>
+
+            <input class="btn btn-success mt-3" type="submit" value="Submit">
+            </div>
+          </form>
+
+      </section>
+    </section>
+
+    <section id="sidebar" style="height: 150px;" class="container col-12 col-md-3 mt-5 pt-4 pl-3 justify-content-around">
+      <h2 class="h4" style="color: #4aaaa5">Connect with me</h2>
+
+      <hr style="margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 0.5em; margin-right: 0.5em; border-style: inset; border-width: 1px;">
+
+      <div class="d-inline-flex">
+      <a href="https://github.com/jinkkim"><img id="github-image" src="images/github.png" alt="Github"></a>
+      <a href="https://www.linkedin.com/in/jinkingkim/"><img id="linked-image" src="images/linkedin.png" alt="Linkedin"></a>
+      <a href="https://stackoverflow.com"><img id="stackoverflow-image" src="images/stackoverflow.png" alt="Stackoverflow"></a>
+      </div>
+    </section>
+  </div>
+
+
+  <footer style="background-color: #666; color:#fff; border-top: 5px solid teal;" class="fixed-bottom text-center pt-3">
+    <p>Copyleft 2018 by Jin Kim</p>
+  </footer>
+  
+  <script src="js/jquery.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
